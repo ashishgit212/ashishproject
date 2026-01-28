@@ -1,16 +1,11 @@
 <?php
-// db.php
+$conn = mysqli_connect(
+    DB_HOST,
+    DB_USER,
+    DB_PASS,
+    DB_NAME
+);
 
-$host = getenv("DB_HOST");
-$user = getenv("DB_USER");
-$pass = getenv("DB_PASS");
-$db   = getenv("DB_NAME");
-$port = getenv("DB_PORT") ?: 3306;
-
-// Create connection
-$conn = mysqli_connect($host, $user, $pass, $db, $port);
-
-// Check connection
 if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }
