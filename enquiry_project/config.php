@@ -2,6 +2,15 @@
 // config.php
 
 // App settings
+
+<?php
+// Database configuration
+
+define("DB_HOST", "localhost");
+define("DB_USER", "root");
+define("DB_PASS", "");
+define("DB_NAME", "mjenquiry_db");
+
 define("APP_NAME", "MJ Enquiry System");
 define("APP_ENV", getenv("APP_ENV") ?: "production");
 define("BASE_URL", getenv("BASE_URL") ?: "");
