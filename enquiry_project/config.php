@@ -3,7 +3,6 @@
 
 // App settings
 
-<?php
 // Database configuration
 
 define("DB_HOST", "localhost");
@@ -26,3 +25,7 @@ if (APP_ENV === "development") {
 
 // Timezone
 date_default_timezone_set("Asia/Kolkata");
+
+
+
+<?php
