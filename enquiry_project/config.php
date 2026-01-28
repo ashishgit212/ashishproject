@@ -27,5 +27,5 @@ if (APP_ENV === "development") {
 date_default_timezone_set("Asia/Kolkata");
 
 
+?>
 
-<?php
